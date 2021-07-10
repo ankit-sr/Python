@@ -2,10 +2,6 @@ import speedtest
 
 test = speedtest.Speedtest()
 
-down = test.download()
+print(f"Download Speed: {test.download()}")
 
-up = test.upload()
-
-print(f"Download Speed: {down}")
-
-print(f"Upload Speed: {up}")
+print(f"Upload Speed: {test.upload()}")
